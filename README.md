@@ -33,7 +33,9 @@ Na pasta `site`, rode um servidor estático, por exemplo:
 npx serve site
 ```
 
-## Publicar no Render
+## Publicação (Render)
 
-Static Site com **Publish directory** = `site` e build command vazio (ou use o `render.yaml` como Blueprint).
-Depois de publicar, troque o `og:image` do `index.html` pela URL completa da imagem (ex.: `https://seu-site.onrender.com/img/og-image.jpg`) para a prévia aparecer no WhatsApp.
+No ar em **https://rustico-burguer-vr.onrender.com** (Static Site, Publish directory = `site`).
+Cada `git push` na branch `main` publica de novo automaticamente.
+
+Se for usar um domínio próprio, atualize as URLs de `canonical`, `og:url`, `og:image` e do JSON-LD no `index.html`.
