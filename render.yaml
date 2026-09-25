@@ -1,0 +1,23 @@
+# Render Blueprint: site estático da Rústico Burguer VR
+services:
+  - type: web
+    name: rustico-burguer-vr
+    runtime: static
+    buildCommand: echo "Site estático, sem build"
+    staticPublishPath: ./site
+    headers:
+      - path: /*
+        name: X-Content-Type-Options
+        value: nosniff
+      - path: /*
+        name: Referrer-Policy
+        value: strict-origin-when-cross-origin
+      - path: /img/*
+        name: Cache-Control
+        value: public, max-age=604800
+      - path: /css/*
+        name: Cache-Control
+        value: public, max-age=3600
+      - path: /js/*
+        name: Cache-Control
+        value: public, max-age=3600

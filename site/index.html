@@ -1,0 +1,631 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <script>document.documentElement.classList.add('js');</script>
+
+  <title>Rústico Burguer VR | Hambúrguer artesanal na brasa em Volta Redonda</title>
+  <meta name="description" content="Hambúrguer brabo é no Rústico: carnes nobres, receita autoral e cheddar escorrendo, tudo preparado na brasa. Delivery e loja física no Voldac, Volta Redonda. Peça online a partir de R$ 19,90.">
+  <meta name="theme-color" content="#0c0806">
+
+  <!-- Compartilhamento (WhatsApp, Instagram, Facebook).
+       Depois de publicar, troque "img/og-image.jpg" pela URL completa, ex.: https://seudominio.com.br/img/og-image.jpg -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <meta property="og:site_name" content="Rústico Burguer VR">
+  <meta property="og:title" content="Rústico Burguer VR · Hambúrguer brabo é no Rústico">
+  <meta property="og:description" content="O verdadeiro artesanal de Volta Redonda, preparado na brasa. Peça online a partir de R$ 19,90.">
+  <meta property="og:image" content="img/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+
+  <link rel="icon" type="image/png" href="img/favicon.png">
+  <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Condensed:wght@600;700;800&family=Barlow:wght@400;500;600;700;800&family=Permanent+Marker&display=swap">
+  <link rel="preload" as="image" href="img/hero-duo.webp" fetchpriority="high">
+  <link rel="stylesheet" href="css/style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Restaurant",
+    "name": "Rústico Burguer",
+    "alternateName": "Rústico Burguer VR",
+    "description": "Hamburgueria artesanal em Volta Redonda: carnes nobres, receita autoral, preparado na brasa.",
+    "image": "img/og-image.jpg",
+    "logo": "img/logo.png",
+    "servesCuisine": ["Hambúrguer artesanal", "Lanches"],
+    "priceRange": "R$ 19,90 – R$ 69,90",
+    "acceptsReservations": false,
+    "paymentAccepted": "Pix, Cartão de crédito, Dinheiro, Google Pay",
+    "hasMenu": "https://pedido.anota.ai/loja/rstico-burguer-4",
+    "sameAs": ["https://www.instagram.com/rusticoburguer.vr/"],
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Rua Padre Diogo Feijó, 75 - Voldac",
+      "addressLocality": "Volta Redonda",
+      "addressRegion": "RJ",
+      "postalCode": "27285-220",
+      "addressCountry": "BR"
+    },
+    "openingHoursSpecification": [
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Sunday", "Monday", "Wednesday", "Thursday"], "opens": "18:45", "closes": "23:30" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Friday", "opens": "18:50", "closes": "23:30" },
+      { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "18:30", "closes": "23:30" }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+  <!-- Intro -->
+  <div class="loader" aria-hidden="true">
+    <div class="loader-inner">
+      <img src="img/logo.webp" alt="" width="120" height="120">
+      <div class="loader-bar"><i></i></div>
+      <span class="loader-text">acendendo a brasa…</span>
+    </div>
+  </div>
+  <noscript><style>.loader{display:none}</style></noscript>
+
+  <div class="progress" aria-hidden="true"><span data-progress></span></div>
+
+  <!-- Navegação -->
+  <header class="nav" data-nav>
+    <div class="container nav-inner">
+      <a class="brand" href="#topo" aria-label="Rústico Burguer, voltar ao início">
+        <img src="img/logo.webp" alt="" width="46" height="46">
+        <span class="brand-text">Rústico <small>Burguer · VR</small></span>
+      </a>
+
+      <nav class="nav-links" aria-label="Seções">
+        <a href="#ofertas">Ofertas</a>
+        <a href="#anatomia">Por dentro</a>
+        <a href="#combos">Combos</a>
+        <a href="#cardapio">Cardápio</a>
+        <a href="#onde">Onde estamos</a>
+      </nav>
+
+      <div class="nav-cta">
+        <span class="status-pill status-pill--nav" data-status><i class="dot"></i><span data-status-short>Horário</span></span>
+        <a class="btn btn-primary btn-sm" href="https://pedido.anota.ai/loja/rstico-burguer-4?f=ms" target="_blank" rel="noopener" data-order>Pedir agora</a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="menu-mobile" data-menu-toggle>
+          <span class="sr-only">Abrir menu</span>
+          <i></i><i></i><i></i>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-menu" id="menu-mobile" data-mobile-menu hidden>
+    <nav aria-label="Seções (celular)">
+      <a href="#ofertas">Ofertas</a>
+      <a href="#anatomia">Por dentro do Rústico</a>
+      <a href="#combos">Combos</a>
+      <a href="#fomometro">Fomômetro</a>
+      <a href="#cardapio">Cardápio completo</a>
+      <a href="#onde">Onde estamos</a>
+    </nav>
+    <a class="btn btn-primary btn-lg" href="https://pedido.anota.ai/loja/rstico-burguer-4?f=ms" target="_blank" rel="noopener" data-order>Pedir agora</a>
+  </div>
+
+  <main id="conteudo">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="topo">
+      <canvas class="embers" data-embers="70" aria-hidden="true"></canvas>
+      <div class="hero-smoke" aria-hidden="true"><i></i><i></i><i></i></div>
+
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <div class="hero-pills intro" style="--d:.25s">
+            <span class="status-pill" data-status><i class="dot"></i><span data-status-text>Confira nosso horário</span></span>
+            <span class="pill-loc">Voldac · Volta Redonda</span>
+          </div>
+
+          <h1 class="hero-title">
+            <span class="line"><span>Hambúrguer</span></span>
+            <span class="line"><span>brabo é no</span></span>
+            <span class="brush-line">
+              <span class="brush">Rústico<svg class="brush-underline" viewBox="0 0 320 34" aria-hidden="true"><path d="M6 24C70 8 150 30 314 10" pathLength="1"/></svg></span>
+            </span>
+          </h1>
+
+          <p class="hero-lead intro" style="--d:.5s">Carnes nobres, receita autoral e cheddar escorrendo, tudo <strong>preparado na brasa</strong>. O verdadeiro artesanal de Volta Redonda, do nosso fogo pra sua mesa.</p>
+
+          <div class="hero-actions intro" style="--d:.62s">
+            <a class="btn btn-primary btn-lg" href="https://pedido.anota.ai/loja/rstico-burguer-4?f=ms" target="_blank" rel="noopener" data-order data-magnetic>
+              <span>Pedir agora</span>
+              <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a class="btn btn-ghost btn-lg" href="#cardapio">Ver cardápio</a>
+          </div>
+
+          <ul class="hero-trust intro" style="--d:.72s">
+            <li>Sem pedido mínimo</li>
+            <li>Pix, cartão ou dinheiro</li>
+            <li>Delivery e loja física</li>
+          </ul>
+        </div>
+
+        <div class="hero-visual intro" style="--d:.15s" data-hero-visual>
+          <div class="hero-glow"></div>
+          <svg class="hero-ring" viewBox="0 0 500 500" aria-hidden="true">
+            <defs><path id="ring-path" d="M250 250m-214 0a214 214 0 1 1 428 0a214 214 0 1 1-428 0"/></defs>
+            <circle cx="250" cy="250" r="240" fill="none" stroke="currentColor" stroke-opacity=".22" stroke-dasharray="2 9"/>
+            <text><textPath href="#ring-path" textLength="1340" lengthAdjust="spacing">PREPARADO NA BRASA ✦ FEITO PRA MARCAR ✦ CARNES NOBRES ✦ RECEITA AUTORAL ✦</textPath></text>
+          </svg>
+          <img class="hero-img" src="img/hero-duo.webp" width="1200" height="1453" alt="Dois hambúrgueres artesanais do Rústico, com cheddar, bacon e cebola, e batata frita na tábua de madeira" fetchpriority="high">
+          <div class="sticker sticker-price"><span>a partir de</span><strong>R$&nbsp;19,90</strong></div>
+          <div class="sticker sticker-fire">Na brasa 🔥</div>
+        </div>
+      </div>
+
+      <a class="scroll-cue" href="#ofertas">
+        <span>Role pra sentir o cheiro</span>
+        <i aria-hidden="true"></i>
+      </a>
+    </section>
+
+    <!-- Faixas -->
+    <div class="tickers" aria-hidden="true">
+      <div class="ticker ticker--red">
+        <div class="ticker-track" data-marquee="70">
+          <span>Hambúrguer brabo</span><b>✸</b><span>Preparado na brasa</span><b>✸</b><span>Carnes nobres</span><b>✸</b><span>Receita autoral</span><b>✸</b><span>Cheddar escorrendo</span><b>✸</b><span>Bacon crocante</span><b>✸</b>
+        </div>
+      </div>
+      <div class="ticker ticker--yellow">
+        <div class="ticker-track ticker-track--reverse" data-marquee="55">
+          <span>Sem pedido mínimo</span><b>★</b><span>A partir de R$ 19,90</span><b>★</b><span>Quarta a segunda</span><b>★</b><span>Delivery em VR</span><b>★</b><span>Loja física no Voldac</span><b>★</b>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ OFERTAS ============ -->
+    <section class="section offers" id="ofertas">
+      <div class="container">
+        <header class="section-head" data-reveal>
+          <span class="kicker">🔥 Os mais pedidos</span>
+          <h2 class="title">Os queridinhos <em>de VR</em></h2>
+          <p class="lead">Os que mais saem da brasa, com preço de verdade. Escolhe o teu e pede em dois toques.</p>
+        </header>
+        <div class="offers-grid" data-offers></div>
+      </div>
+    </section>
+
+    <!-- ============ ANATOMIA ============ -->
+    <section class="anatomy" id="anatomia" data-anatomy>
+      <div class="anatomy-sticky">
+        <header class="anatomy-head container">
+          <span class="kicker">Anatomia de um Rústico</span>
+          <h2 class="title">Camada por camada, <em>no capricho</em></h2>
+        </header>
+
+        <div class="burger-stage">
+          <div class="burger-stack" data-stack>
+            <!-- Pão de cima -->
+            <div class="layer" style="--top:137;--off:-145;--z:6" data-layer>
+              <svg class="layer-art" viewBox="0 0 400 150" aria-hidden="true">
+                <defs>
+                  <radialGradient id="an-bun" cx="36%" cy="20%" r="90%">
+                    <stop offset="0" stop-color="#ffd896"/>
+                    <stop offset=".3" stop-color="#f4a649"/>
+                    <stop offset=".72" stop-color="#d27420"/>
+                    <stop offset="1" stop-color="#9a4712"/>
+                  </radialGradient>
+                </defs>
+                <path d="M16 126C16 50 96 8 200 8s184 42 184 118c0 12-9 20-21 20H37c-12 0-21-8-21-20z" fill="url(#an-bun)"/>
+                <path d="M16 126c0 12 9 20 21 20h326c12 0 21-8 21-20-44 12-120 16-184 16S60 138 16 126z" fill="#7d3a10" opacity=".55"/>
+                <ellipse cx="138" cy="44" rx="72" ry="17" fill="#fff" opacity=".38" transform="rotate(-13 138 44)"/>
+                <ellipse cx="286" cy="58" rx="30" ry="8" fill="#fff" opacity=".18" transform="rotate(16 286 58)"/>
+              </svg>
+              <div class="layer-label layer-label--right">
+                <strong>Pão brioche</strong>
+                <span class="lbl-long">Macio por dentro, dourado por fora.</span><span class="lbl-short">Macio e dourado</span>
+              </div>
+            </div>
+
+            <!-- Salada -->
+            <div class="layer" style="--top:258;--off:-100;--z:5" data-layer>
+              <svg class="layer-art" viewBox="0 0 400 80" aria-hidden="true">
+                <defs>
+                  <linearGradient id="an-lettuce" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0" stop-color="#c1e866"/>
+                    <stop offset="1" stop-color="#4a8a1c"/>
+                  </linearGradient>
+                  <linearGradient id="an-tomato" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0" stop-color="#ff5b3d"/>
+                    <stop offset="1" stop-color="#b8180f"/>
+                  </linearGradient>
+                </defs>
+                <rect x="26" y="40" width="348" height="27" rx="13.5" fill="url(#an-tomato)"/>
+                <rect x="44" y="46" width="312" height="7" rx="3.5" fill="#ffa184" opacity=".55"/>
+                <path d="M8 46a16 14 0 0 1 26-12a16 14 0 0 1 30-4a16 14 0 0 1 30 2a16 14 0 0 1 30-3a16 14 0 0 1 30 3a16 14 0 0 1 30-3a16 14 0 0 1 30 2a16 14 0 0 1 30-2a16 14 0 0 1 30 3a16 14 0 0 1 30-2a16 14 0 0 1 30 2a16 14 0 0 1 30 2a16 14 0 0 1 26 12q6 8-4 10H14q-10-2-6-10z" fill="url(#an-lettuce)"/>
+                <path d="M34 42c40-6 84 4 124-2s90 6 128 0 56 4 76 2" stroke="#e2f7a8" stroke-width="3" fill="none" stroke-linecap="round" opacity=".75"/>
+              </svg>
+              <div class="layer-label layer-label--left">
+                <strong>Salada fresca</strong>
+                <span class="lbl-long">Alface, tomate e cebola roxa.</span><span class="lbl-short">Alface, tomate e cebola</span>
+              </div>
+            </div>
+
+            <!-- Queijo -->
+            <div class="layer" style="--top:318;--off:-61;--z:4" data-layer>
+              <svg class="layer-art" viewBox="0 0 400 80" aria-hidden="true">
+                <defs>
+                  <linearGradient id="an-cheese" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0" stop-color="#ffdc55"/>
+                    <stop offset="1" stop-color="#f39a0a"/>
+                  </linearGradient>
+                </defs>
+                <path d="M26 8H374Q390 8 388 22L386 30Q385 36 378 36H356C355 52 352 66 344 66C336 66 333 52 332 36H268C267 58 263 74 254 74C245 74 241 58 240 36H182C181 50 178 60 171 60C164 60 161 50 160 36H104C103 46 100 52 95 52C90 52 87 46 86 36H22Q14 36 13 29L12 22Q10 8 26 8Z" fill="url(#an-cheese)"/>
+                <path d="M30 15H370" stroke="#fff5c4" stroke-width="3.5" stroke-linecap="round" opacity=".75"/>
+              </svg>
+              <div class="layer-label layer-label--right">
+                <strong>Cheddar cremoso</strong>
+                <span class="lbl-long">Ou cream cheese. Você escolhe.</span><span class="lbl-short">Ou cream cheese</span>
+              </div>
+            </div>
+
+            <!-- Bacon -->
+            <div class="layer" style="--top:340;--off:19;--z:3" data-layer>
+              <svg class="layer-art" viewBox="0 0 400 60" aria-hidden="true">
+                <g fill="none" stroke-linecap="round">
+                  <path d="M22 36C62 22 100 48 148 32s92-18 136 0 74 16 96-6" stroke="#6e1d10" stroke-width="30"/>
+                  <path d="M22 36C62 22 100 48 148 32s92-18 136 0 74 16 96-6" stroke="#b8432b" stroke-width="24"/>
+                  <path d="M22 36C62 22 100 48 148 32s92-18 136 0 74 16 96-6" stroke="#f3c3a6" stroke-width="4.5" transform="translate(0 -6)"/>
+                  <path d="M22 36C62 22 100 48 148 32s92-18 136 0 74 16 96-6" stroke="#f7d2bb" stroke-width="3.5" transform="translate(0 6)" opacity=".85"/>
+                  <path d="M22 36C62 22 100 48 148 32s92-18 136 0 74 16 96-6" stroke="#8c2616" stroke-width="2"/>
+                  <path d="M40 30c30-8 60 4 90-2" stroke="#fff" stroke-width="2.5" opacity=".25" transform="translate(0 -6)"/>
+                </g>
+              </svg>
+              <div class="layer-label layer-label--left">
+                <strong>Bacon crocante</strong>
+                <span class="lbl-long">Em fatias, do jeito que tem que ser.</span><span class="lbl-short">Em fatias, no ponto</span>
+              </div>
+            </div>
+
+            <!-- Carne -->
+            <div class="layer" style="--top:362;--off:83;--z:2" data-layer>
+              <svg class="layer-art" viewBox="0 0 400 95" aria-hidden="true">
+                <defs>
+                  <linearGradient id="an-patty" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0" stop-color="#83461f"/>
+                    <stop offset=".5" stop-color="#5b2c13"/>
+                    <stop offset="1" stop-color="#361709"/>
+                  </linearGradient>
+                  <filter id="an-rough" x="0" y="0" width="100%" height="100%">
+                    <feTurbulence type="fractalNoise" baseFrequency="1.2" numOctaves="2" seed="7" result="noise"/>
+                    <feColorMatrix in="noise" type="matrix" values="0 0 0 0 .08  0 0 0 0 .03  0 0 0 0 .01  0 0 0 4.2 -1.75" result="spots"/>
+                    <feComposite in="spots" in2="SourceGraphic" operator="in"/>
+                  </filter>
+                </defs>
+                <rect x="14" y="8" width="372" height="76" rx="38" fill="url(#an-patty)"/>
+                <rect x="14" y="8" width="372" height="76" rx="38" filter="url(#an-rough)"/>
+                <path d="M50 20c64-7 236-7 300 0" stroke="#b0673a" stroke-width="5" stroke-linecap="round" fill="none" opacity=".55"/>
+                <path d="M44 70c80 7 232 7 312 0" stroke="#230d05" stroke-width="4" stroke-linecap="round" fill="none" opacity=".45"/>
+              </svg>
+              <div class="layer-label layer-label--right">
+                <strong>Blend artesanal</strong>
+                <span class="lbl-long">Carnes nobres na brasa, de 100g a 400g.</span><span class="lbl-short">Na brasa, 100g a 400g</span>
+              </div>
+            </div>
+
+            <!-- Pão de baixo -->
+            <div class="layer" style="--top:430;--off:127;--z:1" data-layer>
+              <svg class="layer-art" viewBox="0 0 400 90" aria-hidden="true">
+                <defs>
+                  <linearGradient id="an-bun-base" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0" stop-color="#eda54e"/>
+                    <stop offset="1" stop-color="#a4521a"/>
+                  </linearGradient>
+                </defs>
+                <path d="M24 12h352c10 0 16 7 14 17-6 36-54 55-190 55S16 65 10 29c-2-10 4-17 14-17z" fill="url(#an-bun-base)"/>
+                <path d="M24 12h352c10 0 16 7 14 17l-.6 3H10.6l-.6-3c-2-10 4-17 14-17z" fill="#f8dcab"/>
+                <ellipse cx="136" cy="54" rx="62" ry="8" fill="#fff" opacity=".16"/>
+              </svg>
+              <div class="layer-label layer-label--left">
+                <strong>Base de respeito</strong>
+                <span class="lbl-long">Segura tudo até a última mordida.</span><span class="lbl-short">Segura até o fim</span>
+              </div>
+            </div>
+
+            <div class="anatomy-cta" data-anatomy-cta>
+              <a class="btn btn-primary" href="https://pedido.anota.ai/loja/rstico-burguer-4?f=ms" target="_blank" rel="noopener" data-order>Montou a fome? Pede o seu</a>
+            </div>
+          </div>
+          <div class="burger-shadow" data-burger-shadow aria-hidden="true"></div>
+        </div>
+
+        <div class="anatomy-progress" aria-hidden="true"><span data-anatomy-bar></span></div>
+      </div>
+    </section>
+
+    <!-- ============ PISCINA DE CHEDDAR ============ -->
+    <section class="cheddar" id="cheddar">
+      <div class="container cheddar-grid">
+        <div class="cheddar-copy" data-reveal>
+          <span class="kicker kicker--dark">Brabo's Cheddar</span>
+          <h2 class="title">Mergulha na <em>piscina de cheddar</em></h2>
+          <p class="cheddar-text">Burger artesanal no pão com gergelim, cheddar ou cream cheese e, do lado, uma <strong>piscina de cheddar com bacon</strong> pra afogar cada mordida. Sem dó.</p>
+
+          <div class="cheddar-options">
+            <a class="option" href="https://pedido.anota.ai/loja/rstico-burguer-4?f=ms" target="_blank" rel="noopener" data-order>
+              <span class="option-name">Brabo's Cheddar</span>
+              <span class="option-detail">1 carne + piscina</span>
+              <span class="option-price">R$ 26,90</span>
+            </a>
+            <a class="option option--hot" href="https://pedido.anota.ai/loja/rstico-burguer-4?f=ms" target="_blank" rel="noopener" data-order>
+              <span class="option-badge">Duplo</span>
+              <span class="option-name">Brabo's Duplo</span>
+              <span class="option-detail">2 carnes de 100g + piscina</span>
+              <span class="option-price">R$ 29,90</span>
+            </a>
+          </div>
+
+          <a class="btn btn-dark btn-lg" href="https://pedido.anota.ai/loja/rstico-burguer-4?f=ms" target="_blank" rel="noopener" data-order data-magnetic>Quero mergulhar</a>
+        </div>
+
+        <div class="cheddar-visual" data-reveal style="--d:.15s">
+          <img src="img/cheddar.webp" width="900" height="1600" alt="Cheddar cremoso escorrendo sobre hambúrguer com bacon na tábua de madeira" loading="lazy">
+          <div class="sticker sticker-cheese">Sem economia de cheddar</div>
+        </div>
+      </div>
+      <div class="drips" data-drips aria-hidden="true"></div>
+    </section>
+
+    <!-- ============ COMBOS ============ -->
+    <section class="section combos" id="combos">
+      <div class="container">
+        <header class="section-head" data-reveal>
+          <span class="kicker kicker--light">Combos</span>
+          <h2 class="title">Combos que <em>entendem</em> a sua vida</h2>
+          <p class="lead">Nome de meme, fome de verdade. Pra dividir… ou não, a gente não julga.</p>
+        </header>
+        <div class="combos-grid" data-combos></div>
+      </div>
+    </section>
+
+    <!-- ============ FOMÔMETRO ============ -->
+    <section class="section hunger" id="fomometro">
+      <div class="container hunger-grid">
+        <div class="hunger-copy" data-reveal>
+          <span class="kicker">Fomômetro</span>
+          <h2 class="title">Qual o tamanho da sua <em>fome</em> hoje?</h2>
+          <p class="lead">Arrasta o fogo e deixa que a gente escolhe por você.</p>
+
+          <div class="hunger-control">
+            <div class="hunger-flame" data-hunger-flame aria-hidden="true">
+              <svg viewBox="0 0 100 130">
+                <defs>
+                  <linearGradient id="fl-outer" x1="0" y1="1" x2="0" y2="0">
+                    <stop offset="0" stop-color="#e3161b"/>
+                    <stop offset=".55" stop-color="#ff6a13"/>
+                    <stop offset="1" stop-color="#ffc21a"/>
+                  </linearGradient>
+                  <linearGradient id="fl-inner" x1="0" y1="1" x2="0" y2="0">
+                    <stop offset="0" stop-color="#ffb300"/>
+                    <stop offset="1" stop-color="#fff4b8"/>
+                  </linearGradient>
+                </defs>
+                <path class="flame-outer" d="M50 4c6 22 30 34 34 62 4 30-14 58-34 60C30 124 12 102 16 74c3-20 16-28 18-44 10 10 12 22 10 30 10-8 14-30 6-56z" fill="url(#fl-outer)"/>
+                <path class="flame-inner" d="M50 58c4 12 16 20 16 36 0 14-8 24-16 24s-17-8-17-22c0-10 6-16 9-24 4 6 5 12 4 16 6-6 8-18 4-30z" fill="url(#fl-inner)"/>
+              </svg>
+            </div>
+            <label class="hunger-level" for="hunger-range" data-hunger-label>Fome brava</label>
+            <input class="hunger-range" type="range" id="hunger-range" min="1" max="6" step="1" value="3" data-hunger>
+            <div class="hunger-scale" aria-hidden="true"><span>fominha</span><span>pra dois</span></div>
+          </div>
+        </div>
+
+        <div class="hunger-result" data-hunger-result aria-live="polite"></div>
+      </div>
+    </section>
+
+    <!-- ============ CARDÁPIO ============ -->
+    <section class="menu" id="cardapio">
+      <svg class="torn torn--top" viewBox="0 0 1440 40" preserveAspectRatio="none" aria-hidden="true"><path d="M0 6L52 12L82 22L122 13L169 23L209 21L252 24L283 14L328 21L354 21L392 26L440 9L479 26L524 20L565 26L616 14L650 24L684 9L717 15L750 27L791 22L841 7L873 18L912 15L942 26L968 14L1002 21L1054 17L1083 15L1116 14L1153 13L1193 20L1224 26L1262 25L1305 20L1344 17L1389 27L1425 22L1440 19V40H0Z"/></svg>
+
+      <div class="container">
+        <header class="section-head" data-reveal>
+          <span class="kicker kicker--dark">Cardápio completo</span>
+          <h2 class="title">Tudo o que sai <em>da nossa brasa</em></h2>
+          <p class="lead">28 lanches, combos e porções. Escolheu? Toca em <strong>Pedir</strong> e finaliza no nosso cardápio online.</p>
+        </header>
+
+        <div class="tabs" role="tablist" aria-label="Categorias do cardápio" data-tabs></div>
+        <div class="menu-panel" id="menu-panel" role="tabpanel" tabindex="0" data-menu-panel></div>
+        <p class="menu-note">Preços do cardápio online, sujeitos a alteração. Fotos ilustrativas.</p>
+        <noscript><p class="menu-note"><a href="https://pedido.anota.ai/loja/rstico-burguer-4?f=ms">Abra o cardápio completo no Anota AI</a>.</p></noscript>
+      </div>
+
+      <svg class="torn torn--bottom" viewBox="0 0 1440 40" preserveAspectRatio="none" aria-hidden="true"><path d="M0 26L34 25L82 15L109 16L135 25L164 32L218 29L261 31L299 21L327 14L378 14L429 14L476 28L500 29L526 34L569 29L615 23L660 29L710 29L745 14L773 23L797 14L840 14L865 14L895 13L936 19L968 29L998 22L1024 17L1069 18L1108 33L1135 14L1163 19L1214 33L1264 15L1318 13L1365 25L1396 18L1440 25V0H0Z"/></svg>
+    </section>
+
+    <!-- ============ PROVA SOCIAL ============ -->
+    <section class="section proof" id="avaliacoes">
+      <div class="container proof-grid">
+        <div class="proof-visual" data-reveal>
+          <img src="img/burger-bacon.webp" width="1100" height="920" alt="Hambúrguer do Rústico com bacon, cheddar, tomate e alface" loading="lazy">
+
+          <div class="chat" data-chat>
+            <div class="chat-head">
+              <span class="chat-menu" aria-hidden="true"><i></i><i></i></span>
+              <span class="chat-title">Chat <span aria-hidden="true">›</span></span>
+              <span class="chat-new" aria-hidden="true">✎</span>
+            </div>
+            <div class="chat-body">
+              <p class="bubble bubble--user" data-chat-user>Chat, qual o melhor hambúrguer de Volta Redonda?</p>
+              <div class="bot-row">
+                <p class="bubble bubble--typing" data-chat-typing aria-hidden="true"><i></i><i></i><i></i></p>
+                <p class="bubble bubble--bot" data-chat-bot><span class="bot-avatar" aria-hidden="true">✦</span><span>É na <b>Rústico</b>, sem dúvidas! <b>Vai sem erro.</b> 🍔🔥</span></p>
+              </div>
+            </div>
+            <div class="chat-input">
+              <span class="chat-plus" aria-hidden="true">+</span>
+              <span class="chat-field" data-chat-field data-text="Chat, qual o melhor hambúrguer de Volta Redonda?"></span>
+              <button class="chat-send" type="button" data-chat-replay aria-label="Repetir a conversa">↻</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="proof-copy">
+          <header data-reveal>
+            <span class="kicker">Quem prova, volta</span>
+            <h2 class="title">Pergunta pra qualquer um <em>(até pra IA)</em></h2>
+          </header>
+
+          <blockquote class="quote" data-reveal style="--d:.1s">
+            <p>Aí tropa que gosta de um lanche de qualidade, melhor opção pro domingão. <strong>Vai no certo.</strong></p>
+            <footer>@fael_tatto, nos stories do Instagram</footer>
+          </blockquote>
+
+          <div class="stats" data-reveal style="--d:.2s">
+            <div class="stat"><strong><span data-count="5800">5.800</span>+</strong><span>seguidores no Instagram</span></div>
+            <div class="stat"><strong><span data-count="28">28</span></strong><span>lanches, combos e porções</span></div>
+            <div class="stat"><strong><span data-count="400">400</span>g</strong><span>de carne no Prime Double</span></div>
+            <div class="stat"><strong><span data-count="6">6</span></strong><span>dias por semana de brasa acesa</span></div>
+          </div>
+
+          <a class="btn btn-ghost" href="https://www.instagram.com/rusticoburguer.vr/" target="_blank" rel="noopener" data-instagram data-reveal style="--d:.3s">Ver mais feedbacks no Insta</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ INSTAGRAM ============ -->
+    <section class="insta" id="instagram">
+      <div class="container insta-head" data-reveal>
+        <div>
+          <span class="kicker">@rusticoburguer.vr</span>
+          <h2 class="title">Segue o <em>fogo</em> no Insta</h2>
+          <p class="lead">Lançamentos, promos e bastidores da brasa: tudo sai primeiro nos stories.</p>
+        </div>
+        <a class="btn btn-primary" href="https://www.instagram.com/rusticoburguer.vr/" target="_blank" rel="noopener" data-instagram>
+          <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4.2" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.4" cy="6.6" r="1.3" fill="currentColor"/></svg>
+          <span>Seguir no Instagram</span>
+        </a>
+      </div>
+
+      <div class="insta-marquee">
+        <div class="insta-track" data-marquee="40">
+          <a class="insta-card" href="https://www.instagram.com/rusticoburguer.vr/" target="_blank" rel="noopener" data-instagram style="--r:-3deg"><img src="img/insta/chat.webp" width="480" height="600" alt="Post: até o chat sabe que o melhor hambúrguer de Volta Redonda é o Rústico" loading="lazy"></a>
+          <a class="insta-card" href="https://www.instagram.com/rusticoburguer.vr/" target="_blank" rel="noopener" data-instagram style="--r:2deg"><img src="img/insta/cheddar.webp" width="480" height="600" alt="Cheddar escorrendo sobre o hambúrguer" loading="lazy"></a>
+          <a class="insta-card" href="https://www.instagram.com/rusticoburguer.vr/" target="_blank" rel="noopener" data-instagram style="--r:-2deg"><img src="img/insta/mais-quatro.webp" width="480" height="600" alt="Post: esse é o único +4 que a gente aceita" loading="lazy"></a>
+          <a class="insta-card" href="https://www.instagram.com/rusticoburguer.vr/" target="_blank" rel="noopener" data-instagram style="--r:3deg"><img src="img/insta/torre.webp" width="480" height="600" alt="Torre de hambúrgueres do Rústico" loading="lazy"></a>
+          <a class="insta-card" href="https://www.instagram.com/rusticoburguer.vr/" target="_blank" rel="noopener" data-instagram style="--r:-3deg"><img src="img/insta/aranha.webp" width="480" height="600" alt="Post: seu sentido aranha está pedindo um Rústico" loading="lazy"></a>
+          <a class="insta-card" href="https://www.instagram.com/rusticoburguer.vr/" target="_blank" rel="noopener" data-instagram style="--r:2deg"><img src="img/insta/duo.webp" width="480" height="600" alt="Dois hambúrgueres artesanais com batata frita" loading="lazy"></a>
+          <a class="insta-card" href="https://www.instagram.com/rusticoburguer.vr/" target="_blank" rel="noopener" data-instagram style="--r:-2deg"><img src="img/insta/tropeiro.webp" width="480" height="600" alt="Post: hoje tem Tropeiro" loading="lazy"></a>
+          <a class="insta-card" href="https://www.instagram.com/rusticoburguer.vr/" target="_blank" rel="noopener" data-instagram style="--r:3deg"><img src="img/insta/na-chapa.webp" width="480" height="600" alt="Bastidores: lanches sendo montados na hora" loading="lazy"></a>
+          <a class="insta-card" href="https://www.instagram.com/rusticoburguer.vr/" target="_blank" rel="noopener" data-instagram style="--r:-2deg"><img src="img/insta/desafio.webp" width="480" height="600" alt="Post do desafio: quanto tempo você comeria esse lanche gigante?" loading="lazy"></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ONDE ESTAMOS ============ -->
+    <section class="section location" id="onde">
+      <div class="container location-grid">
+        <div class="location-info" data-reveal>
+          <span class="kicker">Loja física + delivery</span>
+          <h2 class="title">Vem pra brasa <em>ou</em> pede do sofá</h2>
+
+          <address class="address">
+            <svg width="26" height="26" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 22s7-6.3 7-12a7 7 0 1 0-14 0c0 5.7 7 12 7 12z" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="10" r="2.6" fill="currentColor"/></svg>
+            <span><strong>Rua Padre Diogo Feijó, 75</strong><br>Voldac · Volta Redonda – RJ · 27285-220</span>
+          </address>
+
+          <div class="location-actions">
+            <a class="btn btn-primary" href="https://www.google.com/maps/search/?api=1&amp;query=Rua+Padre+Diogo+Feij%C3%B3%2C+75+-+Voldac%2C+Volta+Redonda+-+RJ%2C+27285-220" target="_blank" rel="noopener" data-maps>Como chegar</a>
+            <a class="btn btn-ghost" href="https://pedido.anota.ai/loja/rstico-burguer-4?f=ms" target="_blank" rel="noopener" data-order>Pedir delivery</a>
+          </div>
+
+          <div class="hours">
+            <div class="hours-head">
+              <h3>Horários</h3>
+              <span class="status-pill" data-status><i class="dot"></i><span data-status-short>Horário</span></span>
+            </div>
+            <ul class="hours-list" data-hours></ul>
+            <p class="countdown" data-countdown></p>
+          </div>
+
+          <div class="payments">
+            <h3>Formas de pagamento</h3>
+            <ul>
+              <li>Pix</li>
+              <li>Cartão de crédito</li>
+              <li>Dinheiro</li>
+              <li>Google Pay</li>
+              <li>Nubank</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="map" data-reveal style="--d:.15s">
+          <iframe title="Mapa: Rústico Burguer na Rua Padre Diogo Feijó, 75, Voldac, Volta Redonda" src="https://www.google.com/maps?q=Rua+Padre+Diogo+Feij%C3%B3,+75+-+Voldac,+Volta+Redonda+-+RJ&amp;output=embed" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CTA FINAL ============ -->
+    <section class="final" id="pedir">
+      <canvas class="embers" data-embers="55" aria-hidden="true"></canvas>
+      <div class="container final-inner" data-reveal>
+        <p class="final-kicker">Hoje vai de <span class="rotator" data-rotator="Supremo|Prime Double 400g|O Lenhador|piscina de cheddar|Combo CLT|Batata Ignorante">Supremo</span>?</p>
+        <h2 class="final-title">A brasa já tá acesa.<span>Só falta o seu pedido.</span></h2>
+        <a class="btn btn-light btn-xl" href="https://pedido.anota.ai/loja/rstico-burguer-4?f=ms" target="_blank" rel="noopener" data-order data-magnetic>Pedir meu Rústico agora</a>
+        <p class="final-meta"><span class="status-pill status-pill--light" data-status><i class="dot"></i><span data-status-text>Confira nosso horário</span></span><span>Sem pedido mínimo</span></p>
+      </div>
+    </section>
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <img src="img/logo.webp" alt="Rústico Burguer" width="84" height="84" loading="lazy">
+        <p>O verdadeiro artesanal começa aqui. Carnes nobres, receita autoral, preparado na brasa.</p>
+      </div>
+      <div>
+        <h3>Navegue</h3>
+        <ul>
+          <li><a href="#ofertas">Ofertas</a></li>
+          <li><a href="#combos">Combos</a></li>
+          <li><a href="#cardapio">Cardápio</a></li>
+          <li><a href="#onde">Onde estamos</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3>Visite</h3>
+        <p>Rua Padre Diogo Feijó, 75<br>Voldac · Volta Redonda – RJ</p>
+        <p>Quarta a segunda<br>a partir das 18h30</p>
+      </div>
+      <div>
+        <h3>Peça e siga</h3>
+        <ul>
+          <li><a href="https://pedido.anota.ai/loja/rstico-burguer-4?f=ms" target="_blank" rel="noopener" data-order>Cardápio online</a></li>
+          <li><a href="https://www.instagram.com/rusticoburguer.vr/" target="_blank" rel="noopener" data-instagram>@rusticoburguer.vr</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <span>© <span data-year>2026</span> Rústico Burguer · Volta Redonda – RJ</span>
+      <span>Pedidos online via Anota AI</span>
+    </div>
+  </footer>
+
+  <!-- Barra fixa no celular -->
+  <div class="mobile-bar" data-mobile-bar>
+    <span class="mobile-bar-status" data-status><i class="dot"></i><span data-status-short>Horário</span></span>
+    <a class="btn btn-primary" href="https://pedido.anota.ai/loja/rstico-burguer-4?f=ms" target="_blank" rel="noopener" data-order>Pedir agora</a>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

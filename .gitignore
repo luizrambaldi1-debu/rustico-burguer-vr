@@ -1,0 +1,7 @@
+# Só o site vai para o repositório.
+# O material bruto (página do Instagram salva, capturas de tela) fica fora.
+/*
+!/site/
+!/render.yaml
+!/README.md
+!/.gitignore
